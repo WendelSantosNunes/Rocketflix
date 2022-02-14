@@ -1,3 +1,4 @@
 .vscode
+.github
 back/node_modules
 back/package-lock.json
