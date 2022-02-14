@@ -1,0 +1,155 @@
+/* Global */
+
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Principal */
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: var(--background);
+}
+
+body #container {
+  text-align: center;
+}
+
+body #logo {
+  margin: auto;
+  width: 62.93px;
+  height: 87.24px;
+}
+
+body h1 {
+  color: var(--title);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#button {
+  background-color: var(--bg-button);
+  display: inline-block;
+
+  margin: 30px 0 26px 0;
+  border-radius: 5px;
+}
+
+#button div {
+  display: flex;
+  align-items: center;
+}
+
+#button img {
+  margin: 11px 17px 11px 14px;
+  width: 35.56px;
+  height: 25.29px;
+}
+
+#button p {
+  margin: 14px 17px 16px 0;
+  color: #000;
+  font-size: 12px;
+}
+
+#description_button {
+  color: var(--subtitle);
+  margin: auto;
+  max-width: 300px;
+  font-size: 14px;
+}
+
+/* Conteúdo dinâmico */
+
+.films_img {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.erro {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.films_img h1 {
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.films_img img {
+  max-width: 100%;
+}
+
+.films_title_contents p {
+  color: var(--title);
+  text-align: left;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.title_gerns {
+  color: var(--title);
+
+  text-align: left;
+  margin: 20px 0 0 10px;
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+.title_gerns::after {
+  display: block;
+  content: '';
+  max-width: 60px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.title_gerns#date::after {
+  max-width: 157px;
+  margin-bottom: 10px;
+}
+
+#genrs {
+  margin-top: 10px;
+  display: flex;
+}
+
+/* Resposividade */
+
+@media (max-width: 190px) {
+  body h1 {
+    font-size: 30px;
+  }
+  #button {
+    margin: 5px;
+  }
+}
