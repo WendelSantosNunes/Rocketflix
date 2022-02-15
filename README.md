@@ -1,10 +1,15 @@
 # RocketFlix
 
-| Página principal
+#### | Página principal
+
 ![Página Principal](./.github/pagina1.png)
-| Página de execução
+
+#### | Página de execução
+
 ![Página Execução](./.github/pagina3.png)
-| Página de erro
+
+#### | Página de erro
+
 ![Página Erro](./.github/pagina2.png)
 
 ## 💻 **Tecnologias**
